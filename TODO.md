@@ -8,8 +8,8 @@
     - [x] Create models v1
     - [ ] Create models v2
     - [x] Create associations
-    - [ ] Create routes (name spaced routes)
-    - [ ] Create controllers - render JSON based on routes
+    - [x] Create routes (name spaced routes)
+    - [x] Create controllers - render JSON based on routes
     - [ ] Fast JSON serializer
     - [x] Create migrations v1
     - [x] Seed DB
@@ -31,3 +31,4 @@
 - [ ] Write blog post
 - [ ] Write README describing application
 - [ ] YouTube video describing app
+- [ ] Make global gitignore
