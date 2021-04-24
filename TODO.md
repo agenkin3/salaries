@@ -14,13 +14,19 @@
     - [x] Create migrations v1
     - [x] Seed DB
 - [ ] Frontend (Client) App
-  - [ ] Make new directory for frontend (separate repo)
-  - [ ] Push repo to Github
-  - [ ] Create single html page
-  - [ ] Create folder for JS files
-  - [ ] Create JS file
-  - [ ] Sample text in index.html
-  - [ ] Make fetch request
+  - [x] Make new directory for frontend (separate repo)
+  - [x] Push repo to Github
+  - [x] Create single html page
+  - [x] Create folder for JS files
+  - [x] Create JS file
+  - [x] Sample text in index.html
+  - [x] Make fetch request (in index.js)
+  - [ ] Fetch request should display post in DOM not console
+  - [ ] Refactor code to be Object Oriented 
+  - [ ] Create edit button that shows form when clicked
+  - [ ] Make Patch request
+  - [ ] Refactor adapter pattern
+  - [ ] Update DOM after changing post title
 
 ### Customization
 - [ ] Add serializer
