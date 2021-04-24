@@ -26,3 +26,21 @@ Migrating to AddPostsAssociationToIndustry (20210424034909)
   [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIndustry Create (1.6ms)[0m  [1m[32mINSERT INTO "industries" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Healthcare"], ["description", "Helping save lives!"], ["created_at", "2021-04-24 04:19:24.105394"], ["updated_at", "2021-04-24 04:19:24.105394"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIndustry Create (0.4ms)[0m  [1m[32mINSERT INTO "industries" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Finance"], ["description", "You need money to make money"], ["created_at", "2021-04-24 04:19:24.116540"], ["updated_at", "2021-04-24 04:19:24.116540"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIndustry Create (0.4ms)[0m  [1m[32mINSERT INTO "industries" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Tech"], ["description", "Build mode"], ["created_at", "2021-04-24 04:19:24.124171"], ["updated_at", "2021-04-24 04:19:24.124171"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Create (1.1ms)[0m  [1m[32mINSERT INTO "posts" ("title", "salary", "details", "created_at", "updated_at", "industry_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Doctor"], ["salary", 300000], ["details", "top of the food chain"], ["created_at", "2021-04-24 04:19:24.167296"], ["updated_at", "2021-04-24 04:19:24.167296"], ["industry_id", 1]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mIndustry Load (0.4ms)[0m  [1m[34mSELECT "industries".* FROM "industries" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]

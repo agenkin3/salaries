@@ -5,13 +5,14 @@
 - [ ] Set up back-end rails API
   - [x] CORS setup
   - [ ] Create DB
-    - [ ] Create models
-    - [ ] Create associations
+    - [x] Create models v1
+    - [ ] Create models v2
+    - [x] Create associations
     - [ ] Create routes (name spaced routes)
     - [ ] Create controllers - render JSON based on routes
     - [ ] Fast JSON serializer
-    - [ ] Create migrations
-    - [ ] Seed DB
+    - [x] Create migrations v1
+    - [x] Seed DB
 - [ ] Frontend (Client) App
   - [ ] Make new directory for frontend (separate repo)
   - [ ] Push repo to Github
