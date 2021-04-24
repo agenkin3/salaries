@@ -1,7 +1,7 @@
 # Project Checklist
 
 ### Set Up
-- [ ] Create top-level folder
+- [x] Create top-level folder
 - [ ] Set up back-end rails API
   - [ ] CORS setup
   - [ ] Create DB
