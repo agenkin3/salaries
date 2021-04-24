@@ -3,7 +3,7 @@
 ### Set Up
 - [x] Create top-level folder
 - [ ] Set up back-end rails API
-  - [ ] CORS setup
+  - [x] CORS setup
   - [ ] Create DB
     - [ ] Create models
     - [ ] Create associations
