@@ -1,6 +1,12 @@
 class Api::V1::PostsController < ApplicationController
   before_action :find_post, only: [:update]
 
+def show
+  post = Post.find([params[:id]])
+  render json: PostSerializer.new(post)
+end
+
+
   def index
     @posts = Post.all
     render json: @posts

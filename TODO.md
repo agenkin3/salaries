@@ -38,3 +38,9 @@
 - [ ] Write README describing application
 - [ ] YouTube video describing app
 - [ ] Make global gitignore
+- [ ] Find Learning Goals document
+
+### Requirements
+- [ ] Name spaced routes
+- [ ] Controllers rendering JSON based on routes
+- [ ] Fast JSON serializer
