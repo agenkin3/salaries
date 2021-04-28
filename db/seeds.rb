@@ -7,9 +7,13 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 industries = Industry.create([
-  { name: 'Healthcare', description: 'Helping save lives!' }, 
-  { name: 'Finance', description: 'You need money to make money'}, 
+  { name: 'Healthcare', description: 'Medical field' }, 
+  { name: 'Finance', description: 'Works with money'}, 
   { name: 'Tech', description: 'Build mode'}
 ])
 
-Post.create(title: 'Doctor', industry: industries.first, salary: 300000, details: "top of the food chain" )
+#post = Post.create([
+  #{title: 'Doctor', salary: 300000, details: "saves lives"}, 
+
+Post.create(title: 'Doctor', industry_id: 1, salary: 300000, details: "saves lives" )
+Post.create(title: 'Analyst', industry_id: 2 , salary: 200000, details: "excel spreadsheets and powerpoint slides" )
