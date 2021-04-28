@@ -21,12 +21,20 @@
   - [x] Create JS file
   - [x] Sample text in index.html
   - [x] Make fetch request (in index.js)
-  - [ ] Fetch request should display post in DOM not console
-  - [ ] Refactor code to be Object Oriented 
+  - [x] Fetch request should display post in DOM not console
+  - [x] Refactor code to be Object Oriented 
   - [ ] Create edit button that shows form when clicked
+      - [ ] Make handle item click function
+      - [ ] Make create edit fields function
+      - [ ] Create delete item function
+      - [ ] Make save updated item function 
+      - [ ] Make filter by industry function 
+      - [ ] Make handle form submit function 
   - [ ] Make Patch request
   - [ ] Refactor adapter pattern
   - [ ] Update DOM after changing post title
+  - [ ] Make industry buttons 
+  - [ ] Filter on industry functionality
 
 ### Customization
 - [ ] Add serializer

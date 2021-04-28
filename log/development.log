@@ -1689,3 +1689,99 @@ No serializer found for resource: #<Post id: 1, title: "Doctor", salary: 300000,
 Completed 200 OK in 273ms (Views: 154.3ms | ActiveRecord: 14.1ms | Allocations: 2232)
 
 
+Started GET "/api/v1/posts" for ::1 at 2021-04-28 16:08:03 -0700
+  [1m[35m (14.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (7.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12:in `index'
+No serializer found for resource: #<Post id: 1, title: "Doctor", salary: 300000, details: "saves lives", created_at: "2021-04-28 19:29:20.747118000 +0000", updated_at: "2021-04-28 19:29:20.747118000 +0000", industry_id: 1>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Post::ActiveRecord_Relation (5.35ms)
+Completed 200 OK in 152ms (Views: 114.8ms | ActiveRecord: 2.3ms | Allocations: 9904)
+
+
+Started GET "/api/v1/posts" for ::1 at 2021-04-28 16:10:42 -0700
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (14.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12:in `index'
+No serializer found for resource: #<Post id: 1, title: "Doctor", salary: 300000, details: "saves lives", created_at: "2021-04-28 19:29:20.747118000 +0000", updated_at: "2021-04-28 19:29:20.747118000 +0000", industry_id: 1>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Post::ActiveRecord_Relation (6.03ms)
+Completed 200 OK in 270ms (Views: 120.5ms | ActiveRecord: 14.9ms | Allocations: 1634)
+
+
+Started GET "/api/v1/posts" for ::1 at 2021-04-28 16:24:01 -0700
+Processing by Api::V1::PostsController#index as */*
+  [1m[35m (13.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12:in `index'
+  [1m[36mPost Load (25.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12:in `index'
+No serializer found for resource: #<Post id: 1, title: "Doctor", salary: 300000, details: "saves lives", created_at: "2021-04-28 19:29:20.747118000 +0000", updated_at: "2021-04-28 19:29:20.747118000 +0000", industry_id: 1>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Post::ActiveRecord_Relation (29.96ms)
+Completed 200 OK in 1265ms (Views: 1195.1ms | ActiveRecord: 406.7ms | Allocations: 2251)
+
+
+Started GET "/api/v1/posts" for ::1 at 2021-04-28 16:28:53 -0700
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (132.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12:in `index'
+No serializer found for resource: #<Post id: 1, title: "Doctor", salary: 300000, details: "saves lives", created_at: "2021-04-28 19:29:20.747118000 +0000", updated_at: "2021-04-28 19:29:20.747118000 +0000", industry_id: 1>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Post::ActiveRecord_Relation (90.96ms)
+Completed 200 OK in 729ms (Views: 546.5ms | ActiveRecord: 132.1ms | Allocations: 1633)
+
+
+Started GET "/api/v1/posts" for ::1 at 2021-04-28 16:33:02 -0700
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (4.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12:in `index'
+No serializer found for resource: #<Post id: 1, title: "Doctor", salary: 300000, details: "saves lives", created_at: "2021-04-28 19:29:20.747118000 +0000", updated_at: "2021-04-28 19:29:20.747118000 +0000", industry_id: 1>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Post::ActiveRecord_Relation (26.58ms)
+Completed 200 OK in 139ms (Views: 117.7ms | ActiveRecord: 4.7ms | Allocations: 1633)
+
+
+Started GET "/api/v1/posts" for ::1 at 2021-04-28 16:34:32 -0700
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (1.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12:in `index'
+No serializer found for resource: #<Post id: 1, title: "Doctor", salary: 300000, details: "saves lives", created_at: "2021-04-28 19:29:20.747118000 +0000", updated_at: "2021-04-28 19:29:20.747118000 +0000", industry_id: 1>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Post::ActiveRecord_Relation (32.83ms)
+Completed 200 OK in 160ms (Views: 140.1ms | ActiveRecord: 1.5ms | Allocations: 1614)
+
+
+Started GET "/api/v1/posts" for ::1 at 2021-04-28 16:36:32 -0700
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12:in `index'
+No serializer found for resource: #<Post id: 1, title: "Doctor", salary: 300000, details: "saves lives", created_at: "2021-04-28 19:29:20.747118000 +0000", updated_at: "2021-04-28 19:29:20.747118000 +0000", industry_id: 1>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Post::ActiveRecord_Relation (335.24ms)
+Completed 200 OK in 408ms (Views: 398.3ms | ActiveRecord: 1.3ms | Allocations: 1614)
+
+
+Started GET "/api/v1/posts" for ::1 at 2021-04-28 16:37:26 -0700
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12:in `index'
+No serializer found for resource: #<Post id: 1, title: "Doctor", salary: 300000, details: "saves lives", created_at: "2021-04-28 19:29:20.747118000 +0000", updated_at: "2021-04-28 19:29:20.747118000 +0000", industry_id: 1>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Post::ActiveRecord_Relation (9.84ms)
+Completed 200 OK in 96ms (Views: 70.6ms | ActiveRecord: 2.0ms | Allocations: 9902)
+
+
+Started GET "/api/v1/posts" for ::1 at 2021-04-28 16:38:00 -0700
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (2.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12:in `index'
+No serializer found for resource: #<Post id: 1, title: "Doctor", salary: 300000, details: "saves lives", created_at: "2021-04-28 19:29:20.747118000 +0000", updated_at: "2021-04-28 19:29:20.747118000 +0000", industry_id: 1>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Post::ActiveRecord_Relation (15.97ms)
+Completed 200 OK in 120ms (Views: 113.5ms | ActiveRecord: 2.6ms | Allocations: 1633)
+
+
+Started GET "/api/v1/posts" for ::1 at 2021-04-28 16:39:23 -0700
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:12:in `index'
+No serializer found for resource: #<Post id: 1, title: "Doctor", salary: 300000, details: "saves lives", created_at: "2021-04-28 19:29:20.747118000 +0000", updated_at: "2021-04-28 19:29:20.747118000 +0000", industry_id: 1>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Post::ActiveRecord_Relation (10.67ms)
+Completed 200 OK in 122ms (Views: 111.9ms | ActiveRecord: 1.0ms | Allocations: 1636)
+
+
