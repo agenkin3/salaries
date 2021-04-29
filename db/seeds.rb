@@ -14,6 +14,6 @@ industries = Industry.create([
 
 #post = Post.create([
   #{title: 'Doctor', salary: 300000, details: "saves lives"}, 
-
+Industry.create(name: 'Healthcare', description: 'medical field')
 Post.create(title: 'Doctor', industry_id: 1, salary: 300000, details: "saves lives" )
 Post.create(title: 'Analyst', industry_id: 2 , salary: 200000, details: "excel spreadsheets and powerpoint slides" )
