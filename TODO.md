@@ -38,7 +38,7 @@
 
 ### Customization
 - [ ] Add serializer
-- [ ] Style with CSS
+- [ ] Style with CSS (bootstrap or materialize)
 - [ ] Confirm that our API setup works
 
 ### Non-Coding Steps

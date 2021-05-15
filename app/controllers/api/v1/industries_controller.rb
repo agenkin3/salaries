@@ -1,9 +1,9 @@
 class Api::V1::IndustriesController < ApplicationController
-  before_action :find_post, only: [:update]
+  #before_action :find_industry, only: [:update]
 
 def show
   industry = Industry.find([params[:id]])
-  render json: IndustrySerializer.new(post)
+  render json: IndustrySerializer.new(industry)
 end
 
 
@@ -13,7 +13,7 @@ end
   end
 
   def update
-    @industry.update(post_params)
+    @industry.update(industry_params)
     if @industry.save
       render json: @industry, status: :accepted
     else
@@ -27,7 +27,7 @@ end
     params.permit(:name, :description)
   end
 
-  def find_post
+  def find_industry
     @industry = Industry.find(params[:id])
   end
 

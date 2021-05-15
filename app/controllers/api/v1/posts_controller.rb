@@ -1,10 +1,10 @@
 class Api::V1::PostsController < ApplicationController
-  before_action :find_post, only: [:update]
+  #before_action :find_post, only: [:update]
 
-def show
-  post = Post.find([params[:id]])
-  render json: PostSerializer.new(post)
-end
+  def show
+    post = Post.find([params[:id]])
+    render json: PostSerializer.new(post)
+  end
 
 
   def index
@@ -20,6 +20,13 @@ end
       render json: { errors: @post.errors.full_messages }, status: :unprocessible_entity
     end
   end
+
+  def destroy
+    post = Post.find(params[:id])
+    post.destroy 
+    render json: {message: "successfully deleted #{post.title}"}
+  end
+
 
   private
 
