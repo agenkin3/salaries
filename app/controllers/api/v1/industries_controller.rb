@@ -3,7 +3,7 @@ class Api::V1::IndustriesController < ApplicationController
 
 def show
   industry = Industry.find([params[:id]])
-  render json: IndustrySerializer.new(industry)
+  #render json: IndustrySerializer.new(industry)
 end
 
 

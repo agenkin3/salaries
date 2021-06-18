@@ -6,13 +6,12 @@ class Api::V1::PostsController < ApplicationController
     render json: PostSerializer.new(post)
   end
 
-
   def index
     @posts = Post.all
     render json: @posts
   end
 
-  def update
+  def update 
     @post.update(post_params)
     if @post.save
       render json: @post, status: :accepted
@@ -27,11 +26,20 @@ class Api::V1::PostsController < ApplicationController
     render json: {message: "successfully deleted #{post.title}"}
   end
 
+  def create
+    post = Post.new(title: params[:title], salary: params[:salary], details: params[:details], industry_id: params[:industry_id])
+    if post.save 
+      byebug
+      render json: {message: "successfully added #{post.title}"}
+    end
+  end
 
   private
 
-  def post_params
-    params.permit(:title, :salary, :details)
+  def post_params 
+    #add .require
+    #review strong params
+    params.permit(:title, :salary, :details, :industry_id)
   end
 
   def find_post

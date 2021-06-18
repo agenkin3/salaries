@@ -1,5 +1,5 @@
 class PostSerializer
   include FastJsonapi::ObjectSerializer
   belongs_to :industries
-  attributes :id, :title, :salary, :details
+  #attributes :title, :salary, :details, :industry_id, :id
 end

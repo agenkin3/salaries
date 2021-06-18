@@ -7,13 +7,26 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 industries = Industry.create([
-  { name: 'Healthcare', description: 'Medical field' }, 
-  { name: 'Finance', description: 'Works with money'}, 
-  { name: 'Tech', description: 'Build mode'}
+{ name: 'Healthcare', description: 'Medical field' }, 
+{ name: 'Finance', description: 'Takes money to make money'}, 
+{ name: 'Tech', description: 'Startups, etc.'},
+{ name: 'Construction', description: 'Build mode for real'},
+{ name: 'Law', description: 'Practices law'}
 ])
 
-#post = Post.create([
-  #{title: 'Doctor', salary: 300000, details: "saves lives"}, 
-Industry.create(name: 'Healthcare', description: 'medical field')
-Post.create(title: 'Doctor', industry_id: 1, salary: 300000, details: "saves lives" )
-Post.create(title: 'Analyst', industry_id: 2 , salary: 200000, details: "excel spreadsheets and powerpoint slides" )
+posts = Post.create([
+  {title: 'Doctor', salary: 300000, details: 'saves lives', industry_id: 1}
+])
+
+# post = Post.create([
+#   {title: 'Doctor', industry_id: 1, salary: 300000, details: "saves lives"}, 
+#   {title: 'Analyst', industry_id: 2, salary: 200000, details: "excel spreadsheets and powerpoint slides"}, 
+
+
+#Industry.create(name: 'Healthcare', description: 'hospital or private practice'), 
+
+# Industry.create(name: 'Finance', description: 'investment banking, private equity, etc'),
+# Industry.create(name: 'Finance', description: 'investment banking, private equity, etc')
+
+#Post.create(title: 'Doctor', industry_id: 1, salary: 300000, details: "saves lives" ),
+#Post.create(title: 'Analyst', industry_id: 2 , salary: 200000, details: "excel spreadsheets and powerpoint slides" )

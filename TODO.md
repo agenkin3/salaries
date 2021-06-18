@@ -26,7 +26,7 @@
   - [ ] Create edit button that shows form when clicked
       - [ ] Make handle item click function
       - [ ] Make create edit fields function
-      - [ ] Create delete item function
+      - [x] Create delete post function
       - [ ] Make save updated item function 
       - [ ] Make filter by industry function 
       - [ ] Make handle form submit function 
@@ -49,6 +49,8 @@
 - [ ] Find Learning Goals document
 
 ### Requirements
-- [ ] Name spaced routes
-- [ ] Controllers rendering JSON based on routes
-- [ ] Fast JSON serializer
+- [x] Name spaced routes
+- [x] Controllers rendering JSON based on routes
+- [x] Fast JSON serializer
+
+
