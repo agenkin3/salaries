@@ -29,7 +29,6 @@ class Api::V1::PostsController < ApplicationController
   def create
     post = Post.new(title: params[:title], salary: params[:salary], details: params[:details], industry_id: params[:industry_id])
     if post.save 
-      byebug
       render json: {message: "successfully added #{post.title}"}
     end
   end
