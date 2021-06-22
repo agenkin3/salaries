@@ -8,9 +8,8 @@
 
 industries = Industry.create([
 { name: 'Healthcare', description: 'Medical field' }, 
-{ name: 'Finance', description: 'Takes money to make money'}, 
-{ name: 'Tech', description: 'Startups, etc.'},
-{ name: 'Construction', description: 'Build mode for real'},
+{ name: 'Finance', description: 'Works with money'}, 
+{ name: 'Tech', description: 'Builds new technology'},
 { name: 'Law', description: 'Practices law'}
 ])
 
