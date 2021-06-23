@@ -8,7 +8,8 @@ class Api::V1::PostsController < ApplicationController
 
   def index
     @posts = Post.all
-    render json: @posts
+    render json: PostSerializer.new(@posts)
+    
   end
 
   def update 
@@ -29,7 +30,7 @@ class Api::V1::PostsController < ApplicationController
   def create
     post = Post.new(title: params[:title], salary: params[:salary], details: params[:details], industry_id: params[:industry_id])
     if post.save 
-      render json: {message: "successfully added #{post.title}"}
+      render json: PostSerializer.new(post)
     end
   end
 

@@ -7,25 +7,12 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 industries = Industry.create([
-{ name: 'Healthcare', description: 'Medical field' }, 
-{ name: 'Finance', description: 'Works with money'}, 
-{ name: 'Tech', description: 'Builds new technology'},
-{ name: 'Law', description: 'Practices law'}
+{ name: 'Healthcare', description: 'The maintenance or improvement of health via the prevention, diagnosis, treatment, recovery, or cure of disease, illness, injury, and other physical and mental impairments in people. Health care is delivered by health professionals and allied health fields.' }, 
+{ name: 'Finance', description: 'Activities associated with banking, leverage or debt, credit, capital markets, money, and investments.'}, 
+{ name: 'Tech', description: 'Businesses revolving around the manufacturing of electronics, creation of software, computers, or products and services relating to information technology.'},
+{ name: 'Law', description: 'Advise clients (individuals or corporations) about their legal rights and responsibilities, and to represent clients in civil or criminal cases, business transactions, and other matters in which legal advice and other assistance are sought.'}
 ])
 
 posts = Post.create([
-  {title: 'Doctor', salary: 300000, details: 'saves lives', industry_id: 1}
+  {title: 'Doctor', salary: 300000, details: 'Diagnose, educate, and treat patients to ensure that they have the best possible care', industry_id: 1}
 ])
-
-# post = Post.create([
-#   {title: 'Doctor', industry_id: 1, salary: 300000, details: "saves lives"}, 
-#   {title: 'Analyst', industry_id: 2, salary: 200000, details: "excel spreadsheets and powerpoint slides"}, 
-
-
-#Industry.create(name: 'Healthcare', description: 'hospital or private practice'), 
-
-# Industry.create(name: 'Finance', description: 'investment banking, private equity, etc'),
-# Industry.create(name: 'Finance', description: 'investment banking, private equity, etc')
-
-#Post.create(title: 'Doctor', industry_id: 1, salary: 300000, details: "saves lives" ),
-#Post.create(title: 'Analyst', industry_id: 2 , salary: 200000, details: "excel spreadsheets and powerpoint slides" )
