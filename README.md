@@ -5,4 +5,4 @@ Welcome to Salaries App! Look up the salaries of others in your industry, browse
 ## Ruby version: 2.6.1p33
 
 ## License
-(MIT)[https://choosealicense.com/licenses/mit/]
+[MIT] (https://choosealicense.com/licenses/mit/)
